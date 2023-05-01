@@ -11,6 +11,7 @@ def take_image(task, b1, b2, b3, b4, b5, b6):
             ('method', (None, "profit")),
             ('key', (None, apikey)),
             ('textinstructions', (None, task)),
+            # Количество файлов body_ может быть любое, от 1 до 10, здесь для примера взята капча сеофаст на которой 6 изображений
             ('body_1', (None, b1)),
             ('body_2', (None, b2)),
             ('body_3', (None, b3)),
