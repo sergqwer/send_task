@@ -3,7 +3,7 @@ import time
 
 
 def take_image(task, b1, b2, b3, b4, b5, b6):
-    apikey = "WZkcEELOAxgbVuGsCS6WKxA8W9SbayEi"
+    apikey = "YOUR_API_KEY"
     response = requests.post(
         "http://goodxevilpay.shop/in.php",
         files=(
