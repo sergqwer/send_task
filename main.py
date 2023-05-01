@@ -7,7 +7,7 @@ def take_image(task, b1, b2, b3, b4, b5, b6):
     response = requests.post(
         "http://goodxevilpay.shop/in.php",
         files=(
-            # Для сеофаст здесь надо указать "seofast"
+            # Для сеофаст здесь надо указать "seofast", для сеотайм "seotime"
             ('method', (None, "profit")),
             ('key', (None, apikey)),
             ('textinstructions', (None, task)),
