@@ -286,3 +286,19 @@ cwallet = api.run(data)
 print('Cwallet: ', cwallet)
 # coordinate:x=270,y=287;x=337,y=200;x=113,y=209
 
+
+# FaucetPay
+# Капча с сайта FaucetPay.io
+# Пример для FaucetPay.io
+data= {
+    "method": "basilisk",
+    "sitekey": "a3760bfe5cf4254b2759c19fb2601667",
+    "siteurl": "https://faucetpay.io",
+}
+faucetpay = api.run(data)
+print('FaucetPay: ', faucetpay)
+# 0b8c2a6bc43593c5bb6576d805d81292
+# В ответ придет токен который надо применить через callback
+# BasiliskCaptcha.prototype.getResult=function(){return [[faucetpay]]}
+# Это надо вызвать через консоль браузера, вместо [[faucetpay]] надо подставить полученый с сервиса токен
+
