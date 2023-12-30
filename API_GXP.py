@@ -222,7 +222,7 @@ data= {
     "method": "geetest_icon"
 }
 geetest_icon = api.run(data)
-print('GeeTest Icon: ', geetest_icon))
+print('GeeTest Icon: ', geetest_icon)
 # coordinate:x=29,y=113;x=93,y=56;x=129,y=122
 
 
