@@ -354,7 +354,6 @@ print('hCaptcha IMG: ', hCaptcha)
 
 # ReCaptcha img
 # sizex - размер сетки с заданиями "9" для 3х3 или "16" для 4х4
-# type - Тип задания (grid, canvas или content)
 # textinstructions - Текст задания, или конкретный предмет (желательно на английском, так выше точность решения). 
 # body - картинка в Base64
 data = {
