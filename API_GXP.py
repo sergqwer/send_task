@@ -365,3 +365,13 @@ data = {
 ReCaptcha = api.run(data)
 print('ReCaptcha IMG: ', ReCaptcha)
 # 1,7,9
+
+# turnstile
+# Получает токен turnstile
+# Обязательные параметры
+# "sitekey": str - Значение параметра data-sitekey, которое вы нашли в коде сайта, обычно оно не меняется, и его достаточно найти один раз
+# "pageurl": str - Полный URL страницы, на которой вы решаете turnstile (На некоторых сайтах рекапча находится во iframe в таком случае надо давать url этого iframe)
+data = {"method": "turnstile", "pageurl": "https://payeer.com/ru/auth/", "sitekey": "0x4AAAAAAADSGfZQH6o7UqM0"}
+turnstile = api.run(data)
+print('turnstile: ', turnstile[:50])
+# 0.5YsJy3i-JlJ7QYJnEVXlf6SH83xu7W125CFG060y-2tGxS7Z
