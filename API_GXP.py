@@ -383,3 +383,13 @@ data = {
 yandeximg = api.run(data)
 print('Yandeximg: ', yandeximg)
 # coordinate:x=297,y=169;x=193,y=86;x=96,y=83;x=96,y=177
+
+# Yandex
+data = {
+    "method": "yandex", 
+    "pageurl": "https://www.gencfg.ru/captcha-demo-8",
+    "sitekey": "ysc1_x9O92iPrvKLMaYTx8ZiyS6cu3xI5p18ejAIovOacc2eb46a5"
+}
+yandex = api.run(data)
+print('yandex: ', yandex)
+# dD0xNzEwMjAxMDg5O2k9MmExMTpmYzgwOmJlYzI6YmIxMzpiMjM2OjhjOGQ6YzhjYzpjMGE2O0Q9OU
