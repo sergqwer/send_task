@@ -409,3 +409,14 @@ print('GeeTest Images: ', geetestimages)
 # textinstructions = 0:
 # 5,8,1
 
+
+# AuthKong
+data = {
+    "method": "authkong", 
+    "pageurl": "https://onlyfaucet.com/",
+    "sitekey": "08f2c2d465d09d4dfd64eeb53f8b579f135b15abf170407747312a066f88b2a1"
+}
+authkong = api.run(data)
+print('AuthKong: ', authkong)
+# 7e45094e7ad6e63741f936d5da889b40
+
