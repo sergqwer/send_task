@@ -16,7 +16,7 @@ def Session():
 
 class Api_GXP:
     def __init__(self):
-        self.url = "http://sctg.xyz"
+        self.url = "http://api.sctg.xyz"
         
         # Здесь надо указать ваш APIKEY с https://t.me/Xevil_check_bot
         # Сервис так же поддерживает передачу дополнительных параметров в apikey
