@@ -431,3 +431,22 @@ tcaptcha = api.run(data)
 print('T-captcha: ', tcaptcha)
 # coordinate:x=150,y=252;x=29,y=212;x=270,y=90
 
+
+# T-captcha token
+appid = "2033864629" # unic captcha id from site
+proxy_type = "http" # proxy type - http or socks5
+proxy = "127.0.0.1:3128:login:pass" # only this proxy format is supported - ip:port:login:pass
+
+data = {
+    "method": "tcaptcha",
+    "pageurl": "|||appid=" + appid + "|||proxy=" + proxy_type + "://" + proxy + "|||"
+}
+
+tcaptcha = api.run(data)
+print('T-captcha: ', tcaptcha)
+# {
+#     "ticket": "ticket_str",
+#     "randstr": "randstr_str",
+#     "proxy": "proxy_str",
+#     "ua": "ua_str"
+# }
