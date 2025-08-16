@@ -5,7 +5,7 @@ import time
 def take_image(task, b1, b2, b3, b4, b5, b6):
     apikey = "YOUR_API_KEY"
     response = requests.post(
-        "http://goodxevilpay.pp.ua/in.php",
+        "https://api.sctg.xyz/in.php",
         files=(
             # Для сеофаст здесь надо указать "seofast", для сеотайм "seotime"
             ('method', (None, "profit")),
@@ -32,7 +32,7 @@ def take_image(task, b1, b2, b3, b4, b5, b6):
         if index >= 20:
             return "FAIL"
         time.sleep(1)
-        response = requests.get(f"http://goodxevilpay.shop/res.php?key={apikey}&id={captcha_id}")
+        response = requests.get(f"https://api.sctg.xyz/res.php?key={apikey}&id={captcha_id}")
         output = response.text
 
     if "|" not in output:
@@ -65,3 +65,4 @@ if __name__ == '__main__':
             # Если надо нажать на одно фото, то скрипт ее номер вернет без лишних знаков
             # Например: 2
             print("Надо нажать на картинку номер " + namber_foto)
+
