@@ -5,7 +5,7 @@ import re
 
 def take_image(apikey, body):
     response = requests.post(
-        "http://goodxevilpay.shop/in.php",
+        "https://api.sctg.xyz/in.php",
         files=(
             ('method', (None, "buxmoney")),
             ('key', (None, apikey)),
@@ -24,7 +24,7 @@ def take_image(apikey, body):
         if index >= 20:
             return "FAIL"
         time.sleep(1)
-        response = requests.get(f"http://goodxevilpay.shop/res.php?key={apikey}&id={captcha_id}")
+        response = requests.get(f"https://api.sctg.xyz/res.php?key={apikey}&id={captcha_id}")
         output = response.text
 
     if "coordinates:" not in output:
@@ -48,3 +48,4 @@ if __name__ == '__main__':
         print("Капча не решена")
     else:
         print(f"Далее надо нажать по координатам x={coordinates[0]} y={coordinates[1]}")
+
